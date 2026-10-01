@@ -6,12 +6,7 @@ terraform {
     }
   }
 
-  backend "azurerm" {
-    storage_account_name = "stgchori"
-    container_name       = "containerchor"
-    resource_group_name  = "rg_chor"
-    key                  = "run.tfstate"
-  }
+
 }
 
 provider "azurerm" {
